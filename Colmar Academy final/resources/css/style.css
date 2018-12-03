@@ -1,0 +1,384 @@
+/** some general rules **/
+
+html{
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+  font-weight: 700;
+  font-size: 2.66rem;
+}
+
+h3{
+  font-size: 1.66rem;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 1.33rem;
+  color: lightgrey;
+}
+
+/**I added some nice hover effects for the links **/
+p,a{
+font-family: 'Raleway', sans-serif;
+line-height: 1.5;
+padding-top: 0.66rem;
+text-decoration: none;
+}
+
+/**hides all the content only used on the mobile version **/
+.mobile{
+  display: none;
+}
+
+/* Header */
+
+header{
+  height: 64px;
+  display: flex;
+}
+
+header img{
+  height: 2.66rem;
+  width: auto;
+  margin: auto 0 auto 2rem;
+}
+
+li{
+  display: inline-block;
+  padding:  0.66rem;
+  transition: all 300ms ease-in 100ms
+}
+
+/**this one looks a bit weird on mobile but since there is no hovering on a phone i left it**/
+header li:hover{
+  color: white;
+  background-color: #2190d1;
+}
+
+nav, ul{
+  margin: auto 1rem auto auto;
+}
+
+h1{
+  margin: auto 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+h1 span{
+  color: grey;
+  font-weight: normal;
+}
+
+/* first part */
+.first-sec{
+  background-color: lightgray;
+  display: flex;
+}
+
+.first-sec img{
+  margin: 2.66rem 2rem;
+  width: 60%;
+  height: auto;
+  align-self: center;
+}
+
+.first-sec h2{
+  font-weight: 900;
+  color: black;
+}
+
+.title{
+  margin: auto auto auto 0;
+  padding-bottom: 3rem;
+  width: 25%;
+  color: #4b4f56
+}
+
+.title p{
+  font-size: 1.3em;
+  line-height: 1.3;
+  margin: 3rem 0;
+}
+
+.title span{
+  display:block;
+  background-color: #4b4f56;
+  text-align: center;
+  color: white;
+  padding: 8px; auto;
+  font-size: 1.3em;
+  line-height: 1.5;
+  transition: all 300ms ease-in 100ms;
+}
+
+.title span:hover{
+  color: black;
+  background-color: #50c5ed;
+}
+
+/* second part */
+
+.second-sec{
+  display: flex;
+  background-color: #50c5ed;
+}
+
+.second-sec-main-info{
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid grey;
+  width: 60%;
+  padding: 2.66rem 2rem;
+}
+
+.second-sec-main-info h2{
+  margin: 2.66rem 0 1.33rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.second-sec-main-info img{
+  width: 100%;
+}
+
+.quote{
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.second-sec-arts article{
+  background-color: #2190d1;
+  margin: 2.66rem 0px;
+  display: flex;
+  border: 1px solid grey;
+}
+
+.second-sec-arts article section{
+  margin: auto 0;
+}
+
+.second-sec-arts{
+  width: 40%;
+}
+
+.second-sec-arts img{
+  margin: 1.33rem;
+  width: 35%;
+  height: auto;
+  align-self: center;
+}
+
+.second-sec-arts a{
+  line-height: 2.5;
+  color: #03317a;
+  transition: color 200ms ease-in;
+}
+
+.second-sec-arts a:hover{
+  color:white;
+}
+
+/**since the articles in seond sec and fourth sec use the same class this one looks a bit different
+than in mockups but i didnt dislike it so i left it as it is **/
+
+.second-sec-arts article:last-child{
+  background-color: lightgrey;
+}
+
+/* third part */
+
+.third-sec{
+  background-color: lightgrey;
+  padding: 2.66rem 3.33rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.third-sec h2{
+  margin-bottom: 1.33rem;
+  text-align: center;
+  font-weight: bold;
+  width: 100%
+}
+
+.third-sec h4{
+  margin: 0.66rem auto;
+}
+
+.third-sec article{
+  background-color: white;
+  margin: 1.33rem 2.66rem;
+  width: 25%;
+  flex-grow: 1;
+}
+
+.third-sec img{
+  width: 100%;
+  height: auto;
+}
+
+.third-sec-art-text{
+  padding: 1.33rem;
+}
+
+/* fourth part */
+
+.fourth-sec{
+  background-color: #50c5ed;
+  padding: 2.66rem 0;
+}
+
+.fourth-sec p{
+  padding-bottom: 0;
+}
+
+.fourth-sec .second-sec-arts{
+  margin-top: 0;
+}
+
+.fourth-sec-content{
+  display: flex;
+}
+
+.fourth-sec h2{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.66rem;
+}
+
+.fourth-sec article{
+  margin-top: 0;
+}
+
+.video{
+  width: 60%;
+  padding: 0 2rem;
+}
+
+.video video{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+/* footer */
+
+footer{
+  display: flex;
+  padding: 1.33rem 0 0 2rem;
+  height: 100px;
+  color: white;
+  background-color: black;
+}
+
+footer ul{
+  margin-top: 0px;
+}
+
+/** media query for mobile version breaks at 600px when the other display would be kind of fucked **/
+@media only screen and (max-width: 600px) {
+
+  /**sets all the desktop only elements invisible **/
+    .desktop {
+      display: none;
+    }
+
+  /** resets some areas that used to be flex-boxes to normal boxes **/
+    .mobile, .first-sec, .third-sec, .second-sec-arts article{
+      display: block;
+    }
+
+    .title, .first-sec img, .second-sec-arts img, .video, .third-sec article{
+      margin: 0;
+      width:100%;
+    }
+
+    h2{
+      font-size: 3.5rem;
+    }
+
+    .title h2 {
+      padding: 2.66rem 1.33rem 0 1.33rem;
+    }
+
+    .title p{
+      font-size: 1.5rem;
+      margin: 2.66rem 1.33rem 2rem 1.33rem ;
+    }
+
+    .title span{
+      margin: auto 1.33rem auto 1.33rem;
+    }
+
+    /* second part */
+    .second-sec-arts{
+      padding: 1.33rem;
+      width: auto;
+    }
+
+    .second-sec-arts article{
+      border-width: 0;
+    }
+
+    .second-sec-arts section{
+      background-color: #50c5ed;
+      padding: 1.33rem 1.33rem 5.33rem 1.33rem;
+    }
+
+    .second-sec-arts h3{
+      font-size: 2.5rem;
+    }
+
+    .second-sec-arts p, .second-sec-arts a{
+      font-size: 1.5rem;
+    }
+
+    /* third part */
+    .third-sec{
+      padding: 0 0 1.33rem 0;
+    }
+
+    .third-sec h2{
+      padding: 2.66rem 0 0 0;
+    }
+
+    .third-sec-art-text{
+      padding: 4px 1.33rem;
+    }
+
+    .third-sec h3{
+      font-size: 2rem;
+      background-color: lightgrey;
+      width: auto;
+      padding: 1.33rem;
+    }
+
+    .third-sec{
+      background-color: white;
+    }
+
+    /*fourth part */
+    .video {
+      padding: 0;
+    }
+
+    .fourth-sec{
+      padding:2.66rem 0 2rem 0;
+    }
+
+    /* footer */
+    footer{
+      height: auto;
+      padding-left: 1.33rem;
+      padding-bottom: 1.33rem;
+    }
+}
